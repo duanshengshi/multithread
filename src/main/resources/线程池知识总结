@@ -1,0 +1,7 @@
+一什么是线程池：一组线程实时处理休眠状态，等待唤醒执行。
+二、创建线程池的方式
+    1、newFixedThreadPool 创建一个固定长度的线程池，当到达线程最大数量时，线程池的规模将不再变化。
+    2、newCachedThreadPool 创建一个可缓存的线程池，如果当前线程池的规模超出了处理需求，将回收空的线程；当需求增加时，会增加线程数量；线程池规模无限制。
+    3、newSingleThreadPoolExecutor 创建一个单线程的Executor，确保任务对了，串行执行
+    4、newScheduledThreadPool 创建一个固定长度的线程池，而且以延迟或者定时的方式来执行，类似Timer；
+三、1.newCachedThreadPool()
